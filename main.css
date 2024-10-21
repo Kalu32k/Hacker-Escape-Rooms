@@ -131,6 +131,68 @@ max-width: 100%;
     margin-left: 5%;
 }
 
+.coding-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards-h1 {
+    color: black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    border: 2px;
+    gap: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-container {
+    padding: 2px 16px;
+
+}
+
+.card-text {
+    margin-left: 5%;
+}
+
+.card-stars {
+    display: flex;
+    gap: 2%;
+}
+
+.card-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-players {
+    margin-left: 80%;
+    margin-top: -5%;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.hacker-card {
+    width: 300px;
+    height: 150px;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 #hidden {
     display: none;
