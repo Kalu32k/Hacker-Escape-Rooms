@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+
+}
+
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #011827;
+}
+
+nav {
+    width: 80%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: roboto;
+    width: auto;
+    display: inline-block;
+
+}
+a:hover {
+    color: #8ACFE5;
+}
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+}
+
+nav li {
+    margin-left: 2%;
+    width: 25%;
+}
+
+.challenge-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -27px;
+}
+
+button{
+    background-color: #E3170A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;  
+}
+
+.on-site-button {
+    background-color: #8ACFE5;
+    color: black;
+    margin-left: 2%;
+}
+
+.challenge-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.quote {
+    display: flex;
+}
+
+.quote-text {
+    margin-left: 5%;
+}
+
+.user-picture {
+    display: flex;
+    flex-shrink: 0;
+    max-width: 100px;
+    max-height: 100px;
+    
+    
+
+}
+
+
+h1 {
+    color: white;
+    width: 20%;
+    margin-left: 1%;
+}
+
+
+.hacker-top {
+height: 100%;
+max-width: 100%;
+
+
+}
+.logo-container{
+    width: 100%;
+
+    display: flex;
+
+}
+
+.logo {
+
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 800px) {
+#hidden {
+    display: none;
+}
+}
+@media screen and (min-width: 900px){
+#shown {
+    display: none;
+}
+
+}
+
+
