@@ -27,7 +27,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    font-family: roboto;
+    font-family: "Roboto", sans-serif;
     width: auto;
     display: inline-block;
 
@@ -147,8 +147,8 @@ max-width: 100%;
 .cards {
     display: flex;
     flex-direction: row;
-    border: 2px;
     gap: 5%;
+    margin-bottom: 5%;
 }
 
 .card {
@@ -190,12 +190,128 @@ max-width: 100%;
     height: 150px;
 }
 
+#no-margin {
+    margin: 0%;
+}
+
+.story {
+    display: flex;
+    justify-content: center;
+    background-color: #011827;
+    height: 50%;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-text {
+    color: white;
+    font-weight: 300;
+    font-size: large;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+.transparent-button {
+    background-color:unset;
+    border:solid;
+    border-radius: 5px;
+    border-color: #8ACFE5;
+    color: #8ACFE5;
+}
+
+.play-friends {
+    display: flex;
+    flex-direction: column;
+}
+
+.play-friends-content {
+    display: flex;
+    flex-direction: row;
+}
 
 
+.play-friends-picture {
+ height: 100%;
+ max-width: 100%;
+
+}
+
+.play-friends-slot {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-left: 5%;
+padding-right: 5%;
+max-width: 40%;
+}
+
+.play-friends h1 {
+    color: black;
+    width: 100%;
+}
+
+.play-friends button {
+    align-self: flex-start;
+}
+
+#reverse {
+    flex-direction: row-reverse;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: #011827;
+}
+
+.footer-info {
+    width: 30%;
+    margin-left: 8%;
+    margin-right: 15%;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    color: white;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
 
 @media screen and (max-width: 800px) {
 #hidden {
     display: none;
+}
+.play-friends-content {
+    flex-direction: column;
+}
+.play-friends-slot {
+   max-width: 100%;
+   margin-bottom: 50px;
+}
+#reverse {
+    flex-direction: column;
 }
 }
 @media screen and (min-width: 900px){
