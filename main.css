@@ -139,9 +139,12 @@ max-width: 100%;
 }
 
 .cards-h1 {
+    display:inline;
+    flex-wrap: nowrap;
     color: black;
     margin-top: 10%;
     margin-bottom: 10%;
+    
 }
 
 .cards {
@@ -149,6 +152,7 @@ max-width: 100%;
     flex-direction: row;
     gap: 5%;
     margin-bottom: 5%;
+
 }
 
 .card {
@@ -302,6 +306,14 @@ max-width: 40%;
 @media screen and (max-width: 800px) {
 #hidden {
     display: none;
+}
+.cards-h1 {
+    /* max-width: 100%; */
+}
+.cards {
+    overflow-x:visible;
+    max-width: 100%;
+    margin-left: 25%;
 }
 .play-friends-content {
     flex-direction: column;
