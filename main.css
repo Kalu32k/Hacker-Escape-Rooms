@@ -17,7 +17,15 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #011827;
+    padding-bottom: -15%;
 }
+
+.logo-container {
+    display: inline-block;
+    width: 100%;
+
+}
+
 
 nav {
     width: 80%;
@@ -85,6 +93,8 @@ button{
     flex-direction: row;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 5%;
+    
 
 }
 .quote {
@@ -100,11 +110,7 @@ button{
     flex-shrink: 0;
     max-width: 100px;
     max-height: 100px;
-    
-    
-
 }
-
 
 h1 {
     color: white;
@@ -112,22 +118,17 @@ h1 {
     margin-left: 1%;
 }
 
-
 .hacker-top {
 height: 100%;
 max-width: 100%;
-
-
 }
+
 .logo-container{
     width: 100%;
-
     display: flex;
-
 }
 
 .logo {
-
     margin-left: 5%;
 }
 
@@ -135,24 +136,26 @@ max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.cards-h1-slot {
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .cards-h1 {
-    display:inline;
+    display:inline-block;
     flex-wrap: nowrap;
     color: black;
     margin-top: 10%;
     margin-bottom: 10%;
-    
+    min-width: 100%;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    margin-bottom: 5%;
-
+    padding: 2px 16px;
+    padding-bottom: 2%;
 }
 
 .card {
@@ -164,7 +167,15 @@ max-width: 100%;
 }
 
 .card-container {
-    padding: 2px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+
 
 }
 
@@ -190,7 +201,7 @@ max-width: 100%;
 }
 
 .hacker-card {
-    width: 300px;
+    width:auto;
     height: 150px;
 }
 
@@ -210,6 +221,8 @@ max-width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 .story-text {
@@ -289,12 +302,15 @@ max-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     width: 25%;
     color: white;
 }
 
 .footer ul {
     list-style: none;
+    padding-left: 0%;
+    margin-top: 0%;
 }
 
 .footer a {
@@ -303,30 +319,51 @@ max-width: 40%;
     font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 #hidden {
     display: none;
 }
-.cards-h1 {
-    /* max-width: 100%; */
-}
-.cards {
-    overflow-x:visible;
+
+.card-container {
+    overflow-x:scroll;
+    /* overflow: hidden; */
     max-width: 100%;
-    margin-left: 25%;
+    margin-left: 5%;
+    scroll-behavior: auto;
+    padding-bottom: 5%;
 }
+
 .play-friends-content {
     flex-direction: column;
 }
+
 .play-friends-slot {
    max-width: 100%;
    margin-bottom: 50px;
 }
+
 #reverse {
     flex-direction: column;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
 }
-@media screen and (min-width: 900px){
+
+.footer-info {
+    /* display:inline-block; */
+    width:75%;
+    margin-left: 5%;
+}
+
+.footer-links {
+    width: 20%;
+    margin-left: 5%;
+}
+}
+
+@media screen and (min-width: 600px){
 #shown {
     display: none;
 }
