@@ -123,8 +123,8 @@ h1 {
 }
 
 .hacker-top {
-height: 100%;
-max-width: 100%;
+    height: 100%;
+    max-width: 100%;
 }
 
 .logo-container{
@@ -168,6 +168,7 @@ max-width: 100%;
     border: 2px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 30%;
 }
 
 .card-container {
@@ -176,11 +177,9 @@ max-width: 100%;
     justify-content: center;
     gap: 3%;
     margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     max-width: 100%;
-
-
 }
 
 .card-text {
@@ -205,8 +204,8 @@ max-width: 100%;
 }
 
 .hacker-card {
-    width:auto;
-    height: 150px;
+    min-width: 50%;
+    height: 200px;
 }
 
 #no-margin {
@@ -258,19 +257,18 @@ max-width: 100%;
 
 
 .play-friends-picture {
- height: 100%;
- max-width: 100%;
-
+    height: 100%;
+    max-width: 100%;
 }
 
 .play-friends-slot {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-left: 5%;
-padding-right: 5%;
-max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 40%;
 }
 
 .play-friends h1 {
@@ -323,59 +321,65 @@ max-width: 40%;
     font-family: "Roboto", sans-serif;
 }
 
+@media screen and (max-width: 1300px) {
+    .card-container {
+        overflow-x:scroll;
+        overflow: hidden;
+        max-width: 100%;
+        margin-left: 5%;
+        padding-bottom: 5%;
+        justify-content: flex-start;
+    }
+    
+    .card {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 600px) {
-#hidden {
-    display: none;
-}
+    #hidden {
+        display: none;
+    }
 
-.logo-container {
-    margin-bottom: 10px;
-}
+    .logo-container {
+        margin-bottom: 10px;
+    }
 
-.card-container {
-    overflow-x:scroll;
-    overflow: hidden;
+
+
+    .play-friends-content {
+        flex-direction: column;
+    }
+
+    .play-friends-slot {
     max-width: 100%;
-    margin-left: 5%;
-    scroll-behavior: auto;
-    padding-bottom: 5%;
-}
+    margin-bottom: 50px;
+    }
 
-.play-friends-content {
-    flex-direction: column;
-}
+    #reverse {
+        flex-direction: column;
+    }
 
-.play-friends-slot {
-   max-width: 100%;
-   margin-bottom: 50px;
-}
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 
-#reverse {
-    flex-direction: column;
-}
+    .footer-info {
+        width:75%;
+        margin-left: 5%;
+    }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info {
-    /* display:inline-block; */
-    width:75%;
-    margin-left: 5%;
-}
-
-.footer-links {
-    width: 20%;
-    margin-left: 5%;
-}
+    .footer-links {
+        width: 20%;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (min-width: 600px){
-#shown {
-    display: none;
-}
-
+    #shown {
+        display: none;
+    }
 }
 
 
