@@ -11,7 +11,8 @@
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
         <script src='main.js'></script>
     </head>
-    <body class="container">
+    <body>
+
         <header class="header">
             <div class="logo-container">
                 <img src="re/logo.png" class="logo" alt="">
@@ -29,15 +30,17 @@
                 <img src="re/hacker.png" class="hacker-top" alt="Mystic character sitting infront of screens">
             </div>
         </header>
+
         <main>
+            <section> <!-- First challenge buttons section -->
+                <div class="challenge-buttons">
+                    <button class="challenge-button" id="hidden">Online challenges</button>
+                    <button class="on-site-button">On-site challenges</button> 
+                </div>
+                <div class="challenge-link"><a href="" id="shown">Online challenges</a></div>
+            </section>
 
-            <div class="challenge-buttons">
-                <button class="challenge-button" id="hidden">Online challenges</button>
-                <button class="on-site-button">On-site challenges</button> 
-            </div>
-            <div class="challenge-link"><a href="" id="shown">Online challenges</a></div>
-
-            <section class="quotes">
+            <section class="quotes"> <!-- User review section -->
                 <div class="quote">
                     <img src="re/john-doe.png" class="user-picture" alt="Picture of a user">
                         <div class="quote-text">
@@ -58,7 +61,7 @@
                     </div>
             </section>
 
-            <section class="coding-cards">
+            <section class="coding-cards"> <!-- Card section -->
                 <div class="cards-h1-slot">
                     <h1 class="cards-h1">Popular challenges right now</h1>  
                 </div>
@@ -127,16 +130,17 @@
                             </div>  
                         </div>
                     </div>
-
             </section>
 
-            <div class="challenge-buttons" id="no-margin">
-                <button class="challenge-button" id="hidden">Online challenges</button>
-                <button class="on-site-button">On-site challenges</button> 
-            </div>
-            <div class="challenge-link"><a href="" id="shown">Online challenges</a></div>
+            <section> <!-- Second challenge button section -->
+                <div class="challenge-buttons" id="no-margin">
+                    <button class="challenge-button" id="hidden">Online challenges</button>
+                    <button class="on-site-button">On-site challenges</button> 
+                </div>
+                <div class="challenge-link"><a href="" id="shown">Online challenges</a></div>
+            </section>
 
-            <section class="story">
+            <section class="story"> <!-- Story part section -->
                 <div class="story-content">
                     <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Maiores pariatur dolores tempore culpa molestias obcaecati rerum quaerat quod quae nostrum asperiores eveniet ab,
@@ -144,10 +148,8 @@
                     <button class="transparent-button">Read the full story</button>
                 </div>
             </section>
-        
-        
-        
-            <section class="play-friends">
+              
+            <section class="play-friends"> <!-- Grid like section with pictures -->
                 <div class="play-friends-content">
                     <div>
                         <img src="re/play-with-friends.png" class="play-friends-picture" alt="">
@@ -173,7 +175,9 @@
                     </div>
                 </div>
             </section>
+
         </main>
+
         <footer class="footer">
             <div class="footer-info">
                 <h5>[Esc] Hacker Escape Rooms</h5>
@@ -202,5 +206,7 @@
                 </ul>
             </div>
         </footer>
+
     </body>
+
 </html>
